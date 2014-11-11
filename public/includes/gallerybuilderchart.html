@@ -1,0 +1,51 @@
+<div id="search">
+        <div ng-controller="ShowGalleryCtrl">
+        <span data-ng-include="'includes/searchbar2.html'"></span>
+        <section id="widget-grid" class="" ng-show="chartReady">
+        <!-- row -->
+          <div class="row">
+        <article class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+          <div class="jarviswidget" id="wid-id-0" data-widget-editbutton="false">
+                <header>
+                  <h2>Custom Gallery</h2>
+                  <span class="widget-icon"><img src="img/icons/edit.png"></span>
+                </header>
+
+                <!-- widget div-->
+                <div>
+
+                  <!-- widget edit box -->
+                  <div class="jarviswidget-editbox">
+                    <!-- This area used as dropdown edit box -->
+
+                  </div>
+                  <!-- end widget edit box -->
+
+                  <!-- widget content -->
+                  <div class="widget-body no-padding" id="galleryImages">
+                    <a href="#" ng-repeat="dress in currentDresses">
+                    <img ng-src="{{dress}}" style="margin-top: 10px;width:180px;height:230px;padding-right:15px;padding-bottom:8px" >
+                    </a></br>
+
+                  </div>
+                  <!-- end widget content -->
+
+                </div>
+                <!-- end widget div -->
+
+              </div>
+              <!-- end widget -->
+          </article>
+          <!-- WIDGET END -->
+          </div>
+          <!-- end row -->
+        </section>
+        </div>
+
+
+      </div>
+      <!-- chart widget start -->
+
+    </div>
+
+    <!-- END MAIN PANEL -->

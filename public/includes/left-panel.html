@@ -1,0 +1,41 @@
+<!-- User info -->
+			<div class="login-info">
+				<span> <!-- User image size is adjusted inside CSS, it should stay as is --> 
+					
+					<a href="javascript:void(0);" id="show-shortcut" data-action="toggleShortcut">
+						<img src="img/avatars/sunny.png" alt="me" class="online" /> 
+						<span data-localize="john.doe">
+							john.doe 
+						</span>
+						<i class="fa fa-angle-down"></i>
+					</a> 
+					
+				</span>
+			</div>
+			<!-- end user info -->
+
+			<!-- NAVIGATION : This navigation is also responsive
+
+			To make this navigation dynamic please make sure to link the node
+			(the reference to the nav > ul) after page load. Or the navigation
+			will not initialize.
+			-->
+
+			<navigation>
+				<nav:item data-view="/Dashboard" data-icon="fa fa-lg fa-fw fa-home" title="Home" />
+		
+				<nav:group data-icon="fa fa-lg fa-fw fa-bar-chart-o" title="Trend Pulse">
+					<nav:item data-view="/graphs/flot" title="Trend Explorer" />
+					<nav:item data-view="/graphs/morris" title="Charts" />
+					<nav:item data-view="/graphs/inline-charts" title="Gallery" />
+				</nav:group>
+
+				<nav:item data-view="/inbox" data-icon="fa fa-lg fa-fw fa-inbox" title="Gallery Builder" ng-click="setCurrentPage('GB')"></nav:item>
+
+				<nav:group data-icon="fa fa-lg fa-fw fa-table" title="Trend Tracer" ng-click="setCurrentPage('TT')">
+					<nav:item data-view="/tables/table" title="Trend Tracer" />
+					<nav:item data-view="/tables/datatables" title="Bar/Pie Chart" />
+				</nav:group>
+				<nav:item data-icon="fa fa-lg fa-fw fa-pencil-square-o" title="My Report"></nav:item>				
+			</navigation>
+			<span class="minifyme" data-action="minifyMenu"> <i class="fa fa-arrow-circle-left hit"></i> </span>

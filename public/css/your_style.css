@@ -1,0 +1,321 @@
+/*/*//*
+ * It is advised not to edit the smartadmin_production.css
+ * as this will override any changes you make in the
+ * later versions of this theme.
+ *
+ * We advise that you use use this CSS to override
+ * SmartAdmin styles.
+ *
+ * Rename the stylesheet to whatever your liking so it will stay
+ * unique to you with each update of SmartAdmin.
+ */
+
+/*
+ * INDEX
+ *
+ * - HTML
+ * - BODY
+ * - CUSTOM STYLES
+ */
+ html, body{
+ 	background: none;
+ 	background-color: #ffffff;
+ }
+#header div{
+	display: inline-block;
+}
+#logo {
+	text-align: center;
+	margin-left: 30%;
+}
+#logo img{
+	display: inline-block;
+	width: 200px;
+	height: auto;
+	margin: 0 auto;
+}
+.pull-right {
+	float: right;
+	position: relative;
+}
+
+.page-footer{
+	padding-left: 0px;
+}
+#main{
+	padding-bottom: 0px;
+}
+/*Top nav css*/
+.topNav{
+	width: 100%;
+	border-bottom: 1px solid #525151;
+	padding-left: 4%;
+	height: 42px;
+	padding-top: 15px;
+	background-color: #f4f4f4;
+}
+.topNav span{
+	width: 10%;
+	margin-left: 3%;
+	color: #000000;
+	font-size: 18px;
+	font-style: bold;
+}
+.dropdown a{
+	text-decoration: none;
+	color: #000000;
+}
+.dropdown a:hover{
+	text-decoration: none;
+	color: #525151;
+	font-style: bold;
+}
+.dropdown-menu{
+	width: 500px;
+}
+.dropdown-menu .submenu{
+	margin-left: 2%;
+	border-bottom: solid 2px;
+}
+.dropdown-menu .submenu li{
+	display: inline-block;
+	margin-left: 3%;
+	font-size: 18px;
+
+}
+.dropdown-menu .subsub{
+	display: block;
+}
+.dropdown-menu .subsub h3{
+	font-size: 20px;
+	margin-left: 7%;
+}
+.dropdown-menu .subsub ul li{
+	display: inline-block;
+	margin-left: 4%;
+}
+.dropdown-menu .leftsub{
+	float: left;
+	margin-left: 5%;
+}
+.dropdown-menu .rightsub{
+	float: right;
+	margin-right: 10%;
+}
+.dropdown-menu .leftsub li, .dropdown-menu .rightsub li{
+	display: block;
+	margin: 10px;
+	background-color: #f3f3f3;
+	width: 120px;
+	height: 35px;
+	padding-left: 12px;
+	padding-top: 7px;
+	font-size: 15px;
+	text-align: middle;
+}
+.dropdown-menu .leftsub2{
+	float: left;
+	margin-left: 10px;
+	width: 50%;
+	display: block;
+	position: fixed;
+}
+.dropdown-menu .rightsub2{
+	float: right;
+	margin-right: 10px;
+	width: 50%;
+	display: block;
+}
+.dropdown-menu .leftsub2 li, .dropdown-menu .rightsub2 li{
+	display: block;
+	margin: 10px;
+	background-color: #f3f3f3;
+	width: 150px;
+	height: 35px;
+	padding-left: 12px;
+	padding-top: 8px;
+	font-size: 15px;
+	text-align: middle;
+}
+.dropdown-menu .datesub li{
+	display: block;
+	margin: 10px;
+	background-color: #f3f3f3;
+	width: 120px;
+	height: 35px;
+	padding-left: 12px;
+	padding-top: 3px;
+	font-size: 15px;
+	text-align: middle;
+}
+#dateRange{
+	width: 165px;
+}
+#dateRange .datesub{
+	position: relative;
+	left: -28px;
+}
+.selectAll{
+	margin-left: 10%;
+	width: 92px;
+	background-color: #4C83B9;
+	height: 28px;
+	text-align: center;
+	padding-top: 4px;
+	margin-top: 10px;
+	margin-bottom: 20px;
+}
+.selectAll a{
+	color: #ffffff;
+	text-align: center;
+}
+#mainContent{
+	padding-left: 7%;
+	padding-top: 1%;
+	padding-bottom: 0;
+	width: 100%;
+	height: auto;
+	margin: 0px;
+}
+#mainContent h2{
+	font-size: 30px;
+}
+
+#searchBar{
+	margin-top: 3%;
+	position: relative;
+	left: -20px;
+}
+
+#mainContent ul{
+	margin-top: 2%;
+	position: relative;
+	left: -32px;
+}
+
+#mainContent ul li{
+	display: inline-block;
+	vertical-align: middle;
+	margin-right: 4%;
+	font-size: 100%;
+}
+
+#mainContent ul li a{
+	text-decoration: none;
+	color: #000000;
+}
+
+#highlightline{
+	width:8%;height:3px;margin:0;padding:0px;background-color:#58ACFA;
+}
+
+#separateline1{
+	width:80%;height:1px;margin:0px;padding:0px;background-color:#D5D5D5;
+}
+
+
+
+#GenerateChart{
+	padding-left: 55px;
+	padding-top: 1%;
+	padding-bottom: 0;
+	width: 100%;
+	height: auto;
+	margin: 0px;
+}
+#GenerateChart h2{
+	font-size: 30px;
+}
+
+#chart{
+	width: 90%;
+	margin-top: 3%;
+}
+#widget-grid{
+	width: 80%;
+	margin-top: 6%;
+	margin-left: 1%;
+}
+#wrapper{
+	min-width: 1150px;
+	width: 100%;
+}
+/*styles for search bar*/
+#searchBar{
+	width: 80%;
+	margin-left: 4.5%;
+}
+.tagbar{
+	width: 100%;
+	height: 30px;
+	margin-left: auto;
+	margin-right: auto;
+	display: block;
+	border: 2px solid;
+	padding-top: 0px;
+}
+#seriesBar{
+    width: 80%;
+    margin: 10px;
+    margin-bottom: 3px;
+}
+#seriesBar span{
+    display: inline-block;
+}
+#seriesLabel{
+	font-size: 100%;
+	width: 25%;
+}
+#browseAndSearch{
+	font-size: 85%;
+	background-color: #f3f3f3;
+	width: 85%;
+}
+#seriesLabel,#browseAndSearch{
+	padding-top: 8px;
+}
+#seriesLabel,#browseAndSearch,.displayTag{
+    display: inline-block;
+    height: 30px;
+    padding-left: 2%;
+}
+.displayTag{
+	color: #3C3936;
+	font-size: 14px;
+	height: 20px;
+	padding-left: 1%;
+	margin-left: 2%;
+}
+#series{
+    width:90%;
+    height: 1800%;
+    padding: 1%;
+    margin-left: 15px;
+    background-color: white;
+    border: 1px solid black;
+}
+#seriesLabel{
+    width: 10%;
+}
+#okButton{
+	float: right;
+	position: relative;
+	top: -30px;
+}
+#dropmenuIcons {
+width: 90%;
+margin-top: 5%;
+margin-left: auto;
+margin-right: auto;
+display:block;
+}
+#dropmenuIcons img{
+margin-left: 3%;
+}
+
+#galleryImages{
+	width: 95%;
+	margin-left: auto;
+	margin-right: auto;
+	display: block;
+}

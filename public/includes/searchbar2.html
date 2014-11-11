@@ -1,0 +1,65 @@
+<div id= "searchBar2">
+
+
+    <script type="text/ng-template" id="popover">
+        <div id="series" ng-controller="TagCtrl">
+                 <tags-input ng-model="tags"><!-- <div class="tagbar"> --><!-- <span class ="displayTag" ng-repeat = "tag in tags" ng-show="tagShow2">{{tag}}</span></div> -->
+                </tags-input>
+                <div id="dropmenuIcons">
+                      <a href="#" ng-repeat="icon1 in currentIcons">
+                        <!-- modify nextlayer so that icon is added to tags aray -->
+                       <img ng-src="{{icon1}}" style="width:100px;height:100px;padding-right:15px;padding-bottom:8px" ng-click="nextLayer()">
+                      </a></br>
+                </div> 
+
+                <button id ="okButton"ng-click="doneSelecting(); hidePopover()">Ok</button>               
+            </div>
+    </script>
+    <div ng-controller="SearchBrowseCtrl2">
+    <div class="dropdown">
+        <div id="seriesBar">
+            <span id="seriesLabel">Series 1:</span>
+            
+            <span id="browseAndSearch" ns-popover
+                  ns-popover-template="popover"
+                  ns-popover-trigger="click"
+                  ns-popover-placement="bottom|left"
+                  ns-popover-theme="ns-popover-tooltip-theme"
+                  ns-popover-hide-on-click="false">
+              <span class="caret"></span>
+              <span ng-hide="hideText">
+                browse and search        
+               </span>                        
+            <span class ="displayTag" ng-repeat = "tag in tags" ng-show="tagShow">{{tag.text}}</span>
+           </span>
+        </div>
+    </div>
+  </div>
+
+
+
+   <div ng-controller="SearchBrowseCtrl2">
+    <div class="dropdown" ng-show="newSeriesShow">
+        <div id="seriesBar">
+            <span id="seriesLabel">Series 2:</span>
+            
+            <span id="browseAndSearch" ns-popover
+                  ns-popover-template="popover"
+                  ns-popover-trigger="click"
+                  ns-popover-placement="bottom|left"
+                  ns-popover-theme="ns-popover-tooltip-theme"
+                  ns-popover-hide-on-click="false">
+              <span class="caret"></span>
+              <span ng-hide="hideText">
+                browse and search  
+              </span>                              
+            <span class ="displayTag" ng-repeat = "tag in tags" ng-show="tagShow">{{tag.text}}</span>
+             </span>
+        </div>
+    </div>
+  </div>
+</div>
+
+
+
+

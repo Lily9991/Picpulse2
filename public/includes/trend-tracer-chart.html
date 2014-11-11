@@ -1,0 +1,56 @@
+<div id="search">
+				<div ng-controller="ShowChartCtrl">
+				<span data-ng-include="'includes/searchbar.html'"></span>
+				<section id="widget-grid" class="" ng-show="chartReady">
+        <!-- row -->
+          <div class="row">
+        <article class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+          <div class="jarviswidget" id="wid-id-0" data-widget-editbutton="false">
+                <header>
+                  <h2>Custom Chart</h2>
+                  <span class="widget-icon"><img src="img/icons/edit.png"></span>
+                </header>
+
+                <!-- widget div-->
+                <div>
+
+                  <!-- widget edit box -->
+                  <div class="jarviswidget-editbox">
+                    <!-- This area used as dropdown edit box -->
+
+                  </div>
+                  <!-- end widget edit box -->
+
+                  <!-- widget content -->
+                  <div class="widget-body no-padding">
+
+                    <c3chart bindto-id="chart" chart-data="datapoints" chart-columns="datacolumns" chart-x="datax">
+                      <chart-axis>
+                        <chart-axis-x axis-id="x" axis-type="timeseries">
+                          <chart-axis-x-tick tick-format="%Y-%m-%d"/>
+                        </chart-axis-x>
+                      </chart-axis>
+                    </c3chart>
+
+                  </div>
+                  <!-- end widget content -->
+
+                </div>
+                <!-- end widget div -->
+
+              </div>
+              <!-- end widget -->
+          </article>
+          <!-- WIDGET END -->
+          </div>
+          <!-- end row -->
+        </section>
+        </div>
+
+
+			</div>
+			<!-- chart widget start -->
+
+		</div>
+
+		<!-- END MAIN PANEL -->

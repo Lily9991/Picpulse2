@@ -1,0 +1,145 @@
+ <div class="topNav" ng-controller="DropdownCtrl">
+    <!-- Simple dropdown -->
+    <span class="dropdown" on-toggle="toggled(open)">
+      <a href class="dropdown-toggle">
+        Target market
+        <i class="fa fa-caret-down"></i>
+      </a>
+      <div class="dropdown-menu">
+        <ul class="submenu">
+          <li>
+              <a href>Demographics</a>
+            </li>
+            <li>
+              <a href>Locations</a>
+            </li>
+            <li>
+              <a href>Subculture</a>
+            </li>
+            <li>
+              <a href>Price</a>
+          </li>
+      </ul>
+      <div class="selectAll"><a href = "#">Select all</a></div>
+      <div class="subsub">
+        <h3>Gender</h3>
+          <ul>
+            <li><a><img src="img/icons/male.png"></a></li>
+            <li><a><img src="img/icons/female.png"></a></li>
+          </ul>
+      </div>
+      <div class="subsub">
+        <h3>Age</h3>
+          <ul>
+            <li><a><img src="img/icons/18.png"></a></li>
+            <li><a><img src="img/icons/49.png"></a></li>
+          </ul>
+      </div>
+      <div class="subsub">
+        <h3>Ethnicity</h3>
+        <ul class="leftsub2">
+          <li>
+              <a href>Select all</a>
+            </li>
+            <li>
+              <a href>African American</a>
+            </li>
+            <li>
+              <a href>Asian</a>
+            </li>
+            <li>
+              <a href>Caucasian</a>
+          </li>
+      </ul>
+      <ul class="rightsub2">
+          <li>
+              <a href>Middle Eastern</a>
+            </li>
+            <li>
+              <a href>Native American</a>
+            </li>
+            <li>
+              <a href>Pacific Islander</a>
+            </li>
+            <li>
+              <a href>Others</a>
+          </li>
+      </ul>
+      </div>
+    </div>
+    </span>
+    <span class="dropdown" on-toggle="toggled(open)">
+      <a href class="dropdown-toggle">
+        Data Types
+        <i class="fa fa-caret-down"></i>
+      </a>
+      <div class="dropdown-menu">
+        <div class="selectAll"><a href = "#">Select all</a></div>
+        <ul class="leftsub">
+          <li>
+              <a href>Blogs</a>
+            </li>
+            <li>
+              <a href>Facebook</a>
+            </li>
+            <li>
+              <a href>Instagram</a>
+            </li>
+            <li>
+              <a href>Pinterest</a>
+          </li>
+          <li>
+              <a href>Google Trends</a>
+          </li>
+      </ul>
+      <ul class="rightsub">
+          <li>
+              <a href>Editorial</a>
+            </li>
+            <li>
+              <a href>Runway</a>
+            </li>
+            <li>
+              <a href>Street</a>
+            </li>
+            <li>
+              <a href>Celebrities</a>
+          </li>
+          <li>
+              <a href>TV Shows</a>
+          </li>
+      </ul>
+      </div>
+    </span>
+    <span class="dropdown" on-toggle="toggled(open)">
+      <a href class="dropdown-toggle">
+        Filter Presets
+        <i class="fa fa-caret-down"></i>
+      </a>
+      <div class="dropdown-menu" id= "filterPresets">
+      </div>
+    </span>
+    <span class="dropdown" on-toggle="toggled(open)">
+      <a href class="dropdown-toggle">
+        Date Range
+        <i class="fa fa-calendar"></i>
+      </a>
+      <div class="dropdown-menu" id= "dateRange">
+        <div class="selectAll"><a href = "#">Select all</a></div>
+        <ul class="datesub">
+          <li>
+            <a href>Last 90 days</a>
+          </li>
+          <li>
+            <a href>Last 60 days</a>
+          </li>
+          <li>
+            <a href>Last 30 days</a>
+          </li>
+          <li>
+            <a href>Last week</a>
+          </li>
+        </ul>
+      </div>
+    </span>
+</div>
