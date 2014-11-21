@@ -21,6 +21,11 @@
  	background: none;
  	background-color: #ffffff;
  }
+#header{
+	background-color: #ffffff;
+	background-image: none;
+	height: 60px;
+}
 #header div{
 	display: inline-block;
 }
@@ -45,22 +50,26 @@
 #main{
 	padding-bottom: 0px;
 }
+/*left panel*/
+#left-panel{
+	top: 10px;
+}
 /*Top nav css*/
+
 .topNav{
 	width: 100%;
-	border-bottom: 1px solid #525151;
-	padding-left: 4%;
+	padding-left: 25px;
 	height: 42px;
 	padding-top: 15px;
 	background-color: #f4f4f4;
 }
 .topNav span{
 	width: 10%;
-	margin-left: 3%;
+	margin-right: 3%;
+	padding-bottom: 10px;
 	color: #000000;
-	font-size: 18px;
-	font-style: bold;
-}
+	font-size: 16px;
+	font-style: bold;}
 .dropdown a{
 	text-decoration: none;
 	color: #000000;
@@ -170,7 +179,7 @@
 	text-align: center;
 }
 #mainContent{
-	padding-left: 7%;
+	padding-left: 25px;
 	padding-top: 1%;
 	padding-bottom: 0;
 	width: 100%;
@@ -181,30 +190,23 @@
 	font-size: 30px;
 }
 
-#searchBar{
-	margin-top: 3%;
-	position: relative;
-	left: -20px;
-}
-
-#mainContent ul{
+#lineBar{
 	margin-top: 2%;
-	position: relative;
-	left: -32px;
 }
+#lineBar ul{
+	padding-left: 0px;
+} 
 
-#mainContent ul li{
+#lineBar ul li{
 	display: inline-block;
 	vertical-align: middle;
 	margin-right: 4%;
 	font-size: 100%;
 }
-
-#mainContent ul li a{
+#lineBar ul li a{
 	text-decoration: none;
 	color: #000000;
 }
-
 #highlightline{
 	width:8%;height:3px;margin:0;padding:0px;background-color:#58ACFA;
 }
@@ -213,10 +215,7 @@
 	width:80%;height:1px;margin:0px;padding:0px;background-color:#D5D5D5;
 }
 
-
-
 #GenerateChart{
-	padding-left: 55px;
 	padding-top: 1%;
 	padding-bottom: 0;
 	width: 100%;
@@ -243,7 +242,6 @@
 /*styles for search bar*/
 #searchBar{
 	width: 80%;
-	margin-left: 4.5%;
 }
 .tagbar{
 	width: 100%;
@@ -255,7 +253,7 @@
 	padding-top: 0px;
 }
 #seriesBar{
-    width: 80%;
+    width: 70%;
     margin: 10px;
     margin-bottom: 3px;
 }
@@ -264,7 +262,7 @@
 }
 #seriesLabel{
 	font-size: 100%;
-	width: 25%;
+	width: 30%;
 }
 #browseAndSearch{
 	font-size: 85%;
